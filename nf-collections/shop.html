@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — NF Collections</title>
+<meta name="description" content="Shop clothing, shoes, bags and jewelry from NF Collections.">
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand"><img src="assets/logo-full.svg" alt="NF Collections"></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-intro">
+    <div class="container">
+      <span class="eyebrow">Shop the collection</span>
+      <h1>Clothing, shoes, bags &amp; jewelry.</h1>
+      <p>Filter by category below. Prices shown in Naira; made-to-order pieces are noted individually.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="filters">
+        <button class="is-active" data-filter="all">All</button>
+        <button data-filter="clothing">Clothing</button>
+        <button data-filter="shoes">Shoes</button>
+        <button data-filter="bags">Bags</button>
+        <button data-filter="jewelry">Jewelry</button>
+      </div>
+
+      <div class="grid-4">
+
+        <div class="card" data-category="clothing">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1756641964889-5a04b6e0f4f6?auto=format&fit=crop&w=700&q=80" alt="Tailored ready-to-wear outfit">
+          </div>
+          <h3 class="card-title">Adaeze Wrap Dress</h3>
+          <p class="card-meta"><span>Clothing · Ready-to-wear</span><span class="card-price">₦45,000</span></p>
+        </div>
+
+        <div class="card" data-category="clothing">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1756641964889-5a04b6e0f4f6?auto=format&fit=crop&w=700&q=80&sat=-20" alt="Tailored two-piece set">
+          </div>
+          <h3 class="card-title">Zainab Two-Piece Set</h3>
+          <p class="card-meta"><span>Clothing · Made-to-order</span><span class="card-price">₦68,000</span></p>
+        </div>
+
+        <div class="card" data-category="shoes">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1525774279600-f3422303f134?auto=format&fit=crop&w=700&q=80" alt="Pair of elegant heels">
+          </div>
+          <h3 class="card-title">Amara Block Heel</h3>
+          <p class="card-meta"><span>Shoes · Sizes 36–42</span><span class="card-price">₦32,000</span></p>
+        </div>
+
+        <div class="card" data-category="shoes">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1525774279600-f3422303f134?auto=format&fit=crop&w=700&q=80&sat=-20" alt="Minimalist flat sandals">
+          </div>
+          <h3 class="card-title">Ronke Flat Sandal</h3>
+          <p class="card-meta"><span>Shoes · Sizes 36–42</span><span class="card-price">₦24,500</span></p>
+        </div>
+
+        <div class="card" data-category="bags">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1754573433744-bf2b79d0eaf4?auto=format&fit=crop&w=700&q=80" alt="Leather handbag on shelf">
+          </div>
+          <h3 class="card-title">Bisi Structured Tote</h3>
+          <p class="card-meta"><span>Bags · Genuine leather</span><span class="card-price">₦55,000</span></p>
+        </div>
+
+        <div class="card" data-category="bags">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1754573433744-bf2b79d0eaf4?auto=format&fit=crop&w=700&q=80&sat=-20" alt="Small leather clutch">
+          </div>
+          <h3 class="card-title">Halima Evening Clutch</h3>
+          <p class="card-meta"><span>Bags · Genuine leather</span><span class="card-price">₦38,000</span></p>
+        </div>
+
+        <div class="card" data-category="jewelry">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1758995115682-1452a1a9e35b?auto=format&fit=crop&w=700&q=80" alt="Gold necklace and earring set">
+          </div>
+          <h3 class="card-title">Fatima Gold Set</h3>
+          <p class="card-meta"><span>Jewelry · Necklace + earrings</span><span class="card-price">₦29,000</span></p>
+        </div>
+
+        <div class="card" data-category="jewelry">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1758995115682-1452a1a9e35b?auto=format&fit=crop&w=700&q=80&sat=-20" alt="Layered gold rings">
+          </div>
+          <h3 class="card-title">Aisha Stacking Rings</h3>
+          <p class="card-meta"><span>Jewelry · Set of 3</span><span class="card-price">₦18,000</span></p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section-stone">
+    <div class="container two-col">
+      <div>
+        <h2>Don't see your size or style?</h2>
+        <p>Most clothing and select bags are available made-to-order. Send your measurements and preferred fabric, and we'll get back to you with a quote and timeline.</p>
+      </div>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-solid">Request a custom order</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-mark.svg" alt="NF Collections mark" style="height:44px;">
+        <p>Fashion built with intention — clothing, shoes, bags and jewelry by Nana Firdausi Asabi.</p>
+        <div class="social-row">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+          <a href="https://wa.me/2340000000000" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">Clothing</a></li>
+          <li><a href="shop.html">Shoes</a></li>
+          <li><a href="shop.html">Bags</a></li>
+          <li><a href="shop.html">Jewelry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>hello@nfcollections.com</li>
+          <li>+234 000 000 0000</li>
+          <li>Lagos, Nigeria</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> NF Collections. All rights reserved.</span>
+      <span>Built by Nana Firdausi Asabi</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

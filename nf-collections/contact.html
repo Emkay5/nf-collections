@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — NF Collections</title>
+<meta name="description" content="Get in touch with NF Collections for orders, custom pieces or styling consultations.">
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand"><img src="assets/logo-full.svg" alt="NF Collections"></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-intro">
+    <div class="container">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Let's talk about your order.</h1>
+      <p>Questions about sizing, a custom piece, or wholesale? Send a message and we'll respond within 1–2 business days.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+
+      <div>
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number (optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="field">
+            <label for="topic">What's this about?</label>
+            <select id="topic" name="topic" required>
+              <option value="">Select an option</option>
+              <option value="order">An existing order</option>
+              <option value="custom">Custom / made-to-order piece</option>
+              <option value="wholesale">Wholesale &amp; partnerships</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell us what you're looking for..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-solid">Send message</button>
+          <p class="form-note">This form is frontend-only for demo purposes and does not send a live email.</p>
+          <div class="form-success" role="status"></div>
+        </form>
+      </div>
+
+      <div>
+        <div class="info-block">
+          <h3>Studio</h3>
+          <p>12 Adeola Odeku Street, Victoria Island, Lagos, Nigeria</p>
+        </div>
+        <div class="info-block">
+          <h3>Email</h3>
+          <p>hello@nfcollections.com</p>
+        </div>
+        <div class="info-block">
+          <h3>Phone &amp; WhatsApp</h3>
+          <p>+234 000 000 0000</p>
+        </div>
+        <div class="info-block">
+          <h3>Hours</h3>
+          <p>Tuesday – Saturday, 10am – 6pm. Fittings by appointment.</p>
+        </div>
+        <div class="info-block">
+          <h3>Follow along</h3>
+          <div class="social-row" style="border-top:none;">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" style="border-color:var(--line); color:var(--ink);">IG</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" style="border-color:var(--line); color:var(--ink);">FB</a>
+            <a href="https://wa.me/2340000000000" target="_blank" rel="noopener" aria-label="WhatsApp" style="border-color:var(--line); color:var(--ink);">WA</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-mark.svg" alt="NF Collections mark" style="height:44px;">
+        <p>Fashion built with intention — clothing, shoes, bags and jewelry by Nana Firdausi Asabi.</p>
+        <div class="social-row">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+          <a href="https://wa.me/2340000000000" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">Clothing</a></li>
+          <li><a href="shop.html">Shoes</a></li>
+          <li><a href="shop.html">Bags</a></li>
+          <li><a href="shop.html">Jewelry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>hello@nfcollections.com</li>
+          <li>+234 000 000 0000</li>
+          <li>Lagos, Nigeria</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> NF Collections. All rights reserved.</span>
+      <span>Built by Nana Firdausi Asabi</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

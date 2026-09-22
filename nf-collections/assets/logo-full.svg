@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 140" width="190" height="140">
+  <defs>
+    <style>
+      .nf-mono { font-family: 'Fraunces', 'Iowan Old Style', 'Georgia', serif; }
+      .nf-sans { font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Monogram: interlocked N / F sharing a stem, tailoring-tape rule beneath -->
+  <g transform="translate(6,8)">
+    <text x="0" y="76" class="nf-mono" font-size="88" font-weight="600" fill="#1C1A17" letter-spacing="-2">N</text>
+    <text x="52" y="76" class="nf-mono" font-size="88" font-weight="600" fill="#B08D57" letter-spacing="-2">F</text>
+  </g>
+
+  <!-- tick-marked rule, echoes a tailor's measuring tape -->
+  <g stroke="#1C1A17" stroke-width="1.5">
+    <line x1="6" y1="96" x2="150" y2="96"/>
+    <line x1="6" y1="92" x2="6" y2="100"/>
+    <line x1="35" y1="93" x2="35" y2="99"/>
+    <line x1="64" y1="93" x2="64" y2="99"/>
+    <line x1="93" y1="93" x2="93" y2="99"/>
+    <line x1="122" y1="93" x2="122" y2="99"/>
+    <line x1="150" y1="92" x2="150" y2="100"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="6" y="122" class="nf-sans" font-size="19" letter-spacing="5" fill="#1C1A17">COLLECTIONS</text>
+</svg>
