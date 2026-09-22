@@ -3,7 +3,7 @@ import ContactClient from './ContactClient';
 
 export const revalidate = 0;
 
-export default function ContactPage() {
-  const content = getSiteContent();
+export default async function ContactPage() {
+  const content = await getSiteContent();
   return <ContactClient studioInfo={content} />;
 }

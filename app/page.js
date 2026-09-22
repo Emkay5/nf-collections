@@ -1,13 +1,12 @@
 import Link from 'next/link';
 import { getSiteContent, getProducts } from '@/lib/db';
 
-export const revalidate = 0; // Dynamic server rendering to fetch DB edits instantly
+export const revalidate = 0;
 
-export default function HomePage() {
-  const content = getSiteContent();
-  const products = getProducts();
+export default async function HomePage() {
+  const content = await getSiteContent();
+  const products = await getProducts();
 
-  // Pick one representative product per category or defaults
   const categories = [
     {
       title: 'Clothing',

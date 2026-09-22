@@ -11,10 +11,10 @@ export default async function AdminPage() {
     redirect('/admin/login');
   }
 
-  const content = getSiteContent();
-  const products = getProducts();
-  const gallery = getGallery();
-  const messages = getMessages();
+  const content = await getSiteContent();
+  const products = await getProducts();
+  const gallery = await getGallery();
+  const messages = await getMessages();
 
   return (
     <AdminDashboardClient

@@ -3,7 +3,7 @@ import ShopClient from './ShopClient';
 
 export const revalidate = 0;
 
-export default function ShopPage() {
-  const products = getProducts();
+export default async function ShopPage() {
+  const products = await getProducts();
   return <ShopClient initialProducts={products} />;
 }

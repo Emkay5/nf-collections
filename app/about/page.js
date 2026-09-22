@@ -3,8 +3,8 @@ import { getSiteContent } from '@/lib/db';
 
 export const revalidate = 0;
 
-export default function AboutPage() {
-  const content = getSiteContent();
+export default async function AboutPage() {
+  const content = await getSiteContent();
 
   return (
     <>
