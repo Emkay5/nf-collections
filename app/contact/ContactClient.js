@@ -46,19 +46,19 @@ export default function ContactClient({ studioInfo }) {
 
   return (
     <>
-      <section class="page-intro">
-        <div class="container">
-          <span class="eyebrow">Get in touch</span>
+      <section className="page-intro">
+        <div className="container">
+          <span className="eyebrow">Get in touch</span>
           <h1>Let's talk about your order.</h1>
           <p>Questions about sizing, a custom piece, or wholesale? Send a message and we'll respond within 1–2 business days.</p>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container contact-grid">
+      <section className="section">
+        <div className="container contact-grid">
           <div>
             <form id="contact-form" onSubmit={handleSubmit}>
-              <div class="field">
+              <div className="field">
                 <label htmlFor="name">Full name *</label>
                 <input
                   type="text"
@@ -69,7 +69,7 @@ export default function ContactClient({ studioInfo }) {
                   onChange={handleChange}
                 />
               </div>
-              <div class="field">
+              <div className="field">
                 <label htmlFor="email">Email address *</label>
                 <input
                   type="email"
@@ -80,7 +80,7 @@ export default function ContactClient({ studioInfo }) {
                   onChange={handleChange}
                 />
               </div>
-              <div class="field">
+              <div className="field">
                 <label htmlFor="phone">Phone number (optional)</label>
                 <input
                   type="tel"
@@ -90,7 +90,7 @@ export default function ContactClient({ studioInfo }) {
                   onChange={handleChange}
                 />
               </div>
-              <div class="field">
+              <div className="field">
                 <label htmlFor="topic">What's this about? *</label>
                 <select
                   id="topic"
@@ -106,7 +106,7 @@ export default function ContactClient({ studioInfo }) {
                   <option value="other">Something else</option>
                 </select>
               </div>
-              <div class="field">
+              <div className="field">
                 <label htmlFor="message">Message *</label>
                 <textarea
                   id="message"
@@ -117,13 +117,13 @@ export default function ContactClient({ studioInfo }) {
                   onChange={handleChange}
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-solid" disabled={submitting}>
+              <button type="submit" className="btn btn-solid" disabled={submitting}>
                 {submitting ? 'Sending message...' : 'Send message'}
               </button>
-              <p class="form-note">Your message is stored securely in our database for store moderation.</p>
-              {successMsg && <div class="form-success">{successMsg}</div>}
+              <p className="form-note">Your message is stored securely in our database for store moderation.</p>
+              {successMsg && <div className="form-success">{successMsg}</div>}
               {errorMsg && (
-                <div class="form-success" style={{ borderLeftColor: '#a82323', background: '#fce8e8' }}>
+                <div className="form-success" style={{ borderLeftColor: '#a82323', background: '#fce8e8' }}>
                   {errorMsg}
                 </div>
               )}
@@ -131,25 +131,25 @@ export default function ContactClient({ studioInfo }) {
           </div>
 
           <div>
-            <div class="info-block">
+            <div className="info-block">
               <h3>Studio</h3>
               <p>{studioInfo.studioAddress}</p>
             </div>
-            <div class="info-block">
+            <div className="info-block">
               <h3>Email</h3>
               <p>{studioInfo.studioEmail}</p>
             </div>
-            <div class="info-block">
+            <div className="info-block">
               <h3>Phone &amp; WhatsApp</h3>
               <p>{studioInfo.studioPhone}</p>
             </div>
-            <div class="info-block">
+            <div className="info-block">
               <h3>Hours</h3>
               <p>{studioInfo.studioHours}</p>
             </div>
-            <div class="info-block">
+            <div className="info-block">
               <h3>Follow along</h3>
-              <div class="social-row" style={{ borderTop: 'none' }}>
+              <div className="social-row" style={{ borderTop: 'none' }}>
                 <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" style={{ borderColor: 'var(--line)', color: 'var(--ink)' }}>IG</a>
                 <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" style={{ borderColor: 'var(--line)', color: 'var(--ink)' }}>FB</a>
                 <a href="https://wa.me/2340000000000" target="_blank" rel="noopener" aria-label="WhatsApp" style={{ borderColor: 'var(--line)', color: 'var(--ink)' }}>WA</a>

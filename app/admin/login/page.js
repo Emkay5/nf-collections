@@ -35,14 +35,14 @@ export default function AdminLoginPage() {
   };
 
   return (
-    <div class="container">
-      <div class="admin-login-box">
-        <span class="eyebrow">Store Management</span>
+    <div className="container">
+      <div className="admin-login-box">
+        <span className="eyebrow">Store Management</span>
         <h2>Admin Authentication</h2>
         <p>Log in to access the NF Collections backend CMS, edit site copy, manage products, lookbook, and moderate incoming messages.</p>
 
         <form onSubmit={handleLogin} style={{ marginTop: '1.5rem' }}>
-          <div class="field">
+          <div className="field">
             <label htmlFor="password">Admin Password</label>
             <input
               type="password"
@@ -60,12 +60,12 @@ export default function AdminLoginPage() {
             </p>
           )}
 
-          <button type="submit" class="btn btn-solid" style={{ width: '100%' }} disabled={loading}>
+          <button type="submit" className="btn btn-solid" style={{ width: '100%' }} disabled={loading}>
             {loading ? 'Authenticating...' : 'Sign In to Dashboard'}
           </button>
         </form>
 
-        <p class="form-note" style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+        <p className="form-note" style={{ textAlign: 'center', marginTop: '1.5rem' }}>
           Default password is <code>admin123</code>. You can customize this in your environment config.
         </p>
       </div>

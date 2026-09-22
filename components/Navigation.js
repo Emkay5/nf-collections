@@ -17,13 +17,13 @@ export default function Navigation() {
   ];
 
   return (
-    <header class="site-header">
-      <div class="nav-wrap">
-        <Link href="/" class="brand">
+    <header className="site-header">
+      <div className="nav-wrap">
+        <Link href="/" className="brand">
           <img src="/assets/logo-full.svg" alt="NF Collections" />
         </Link>
         <button
-          class="nav-toggle"
+          className="nav-toggle"
           aria-label="Toggle menu"
           aria-expanded={isOpen}
           onClick={() => setIsOpen(!isOpen)}
@@ -32,14 +32,14 @@ export default function Navigation() {
           <span></span>
           <span></span>
         </button>
-        <ul class={`nav-links ${isOpen ? 'is-open' : ''}`}>
+        <ul className={`nav-links ${isOpen ? 'is-open' : ''}`}>
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  class={isActive ? 'active' : ''}
+                  className={isActive ? 'active' : ''}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
@@ -50,11 +50,11 @@ export default function Navigation() {
           <li>
             <Link
               href="/admin"
-              class={pathname.startsWith('/admin') ? 'active' : ''}
+              className={pathname.startsWith('/admin') ? 'active' : ''}
               onClick={() => setIsOpen(false)}
               style={{ display: 'inline-flex', alignItems: 'center' }}
             >
-              CMS Admin <span class="admin-badge-nav">CMS</span>
+              CMS Admin <span className="admin-badge-nav">CMS</span>
             </Link>
           </li>
         </ul>

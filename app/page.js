@@ -33,37 +33,37 @@ export default async function HomePage() {
   return (
     <>
       {/* HERO SECTION */}
-      <section class="hero">
-        <div class="hero-copy">
-          <span class="eyebrow">{content.heroEyebrow}</span>
+      <section className="hero">
+        <div className="hero-copy">
+          <span className="eyebrow">{content.heroEyebrow}</span>
           <h1 style={{ whiteSpace: 'pre-line' }}>{content.heroTitle}</h1>
-          <p class="lede">{content.heroLede}</p>
-          <div class="hero-actions">
-            <Link href="/shop" class="btn btn-solid">Shop the collection</Link>
-            <Link href="/about" class="btn">Our story</Link>
+          <p className="lede">{content.heroLede}</p>
+          <div className="hero-actions">
+            <Link href="/shop" className="btn btn-solid">Shop the collection</Link>
+            <Link href="/about" className="btn">Our story</Link>
           </div>
         </div>
-        <div class="hero-media">
+        <div className="hero-media">
           <img src={content.heroImage} alt="NF Collections boutique display" />
-          <span class="tag">{content.heroTag}</span>
+          <span className="tag">{content.heroTag}</span>
         </div>
       </section>
 
       {/* CATEGORY GRID */}
-      <section class="section">
-        <div class="container">
-          <div class="section-head">
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
             <h2>Shop by category</h2>
             <p>Four lines, one standard: every piece is chosen or made to be worn often, not just once.</p>
           </div>
-          <div class="grid-4">
+          <div className="grid-4">
             {categories.map((cat, idx) => (
-              <Link key={idx} href="/shop" class="card">
-                <div class="card-media">
+              <Link key={idx} href="/shop" className="card">
+                <div className="card-media">
                   <img src={cat.image} alt={cat.title} />
                 </div>
-                <h3 class="card-title">{cat.title}</h3>
-                <p class="card-meta">{cat.meta}</p>
+                <h3 className="card-title">{cat.title}</h3>
+                <p className="card-meta">{cat.meta}</p>
               </Link>
             ))}
           </div>
@@ -71,34 +71,34 @@ export default async function HomePage() {
       </section>
 
       {/* FOUNDER STATEMENT */}
-      <section class="section section-stone">
-        <div class="container two-col">
+      <section className="section section-stone">
+        <div className="container two-col">
           <div>
-            <span class="eyebrow">From the founder</span>
-            <p class="statement">"{content.founderQuote}"</p>
+            <span className="eyebrow">From the founder</span>
+            <p className="statement">"{content.founderQuote}"</p>
             <p style={{ marginTop: '1.5rem' }}>— Nana Firdausi Asabi, Founder</p>
           </div>
           <div>
             <p>{content.founderBio}</p>
-            <div class="stat-row">
-              <div class="stat"><b>{content.statProductLines}</b><span>Product lines</span></div>
-              <div class="stat"><b>{content.statQualityChecked}</b><span>Quality-checked pieces</span></div>
-              <div class="stat"><b>{content.statCitiesServed}</b><span>Cities served</span></div>
+            <div className="stat-row">
+              <div className="stat"><b>{content.statProductLines}</b><span>Product lines</span></div>
+              <div className="stat"><b>{content.statQualityChecked}</b><span>Quality-checked pieces</span></div>
+              <div className="stat"><b>{content.statCitiesServed}</b><span>Cities served</span></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA BAND */}
-      <section class="section section-dark">
-        <div class="container two-col">
+      <section className="section section-dark">
+        <div className="container two-col">
           <div>
             <h2>Visit the current collection.</h2>
             <p>Browse pieces by category, or get in touch for a custom order and personal styling.</p>
           </div>
-          <div class="hero-actions">
-            <Link href="/shop" class="btn btn-light">Browse the shop</Link>
-            <Link href="/contact" class="btn-solid btn">Book a consultation</Link>
+          <div className="hero-actions">
+            <Link href="/shop" className="btn btn-light">Browse the shop</Link>
+            <Link href="/contact" className="btn-solid btn">Book a consultation</Link>
           </div>
         </div>
       </section>

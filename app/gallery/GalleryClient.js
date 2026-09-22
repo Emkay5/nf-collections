@@ -12,21 +12,21 @@ export default function GalleryClient({ initialGallery }) {
 
   return (
     <>
-      <section class="page-intro">
-        <div class="container">
-          <span class="eyebrow">Lookbook</span>
+      <section className="page-intro">
+        <div className="container">
+          <span className="eyebrow">Lookbook</span>
           <h1>The collection, in detail.</h1>
           <p>A closer look at pieces across clothing, shoes, bags and jewelry — styled the way they're meant to be worn.</p>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="filters">
+      <section className="section">
+        <div className="container">
+          <div className="filters">
             {['all', 'clothing', 'shoes', 'bags', 'jewelry', 'studio'].map((cat) => (
               <button
                 key={cat}
-                class={activeFilter === cat ? 'is-active' : ''}
+                className={activeFilter === cat ? 'is-active' : ''}
                 onClick={() => setActiveFilter(cat)}
               >
                 {cat.charAt(0).toUpperCase() + cat.slice(1)}
@@ -34,9 +34,9 @@ export default function GalleryClient({ initialGallery }) {
             ))}
           </div>
 
-          <div class="gallery">
+          <div className="gallery">
             {filteredItems.map((item) => (
-              <figure key={item.id} class={item.size || ''}>
+              <figure key={item.id} className={item.size || ''}>
                 <img src={item.image} alt={item.caption} />
                 <figcaption>{item.caption}</figcaption>
               </figure>
@@ -50,14 +50,14 @@ export default function GalleryClient({ initialGallery }) {
         </div>
       </section>
 
-      <section class="section section-dark">
-        <div class="container two-col">
+      <section className="section section-dark">
+        <div className="container two-col">
           <div>
             <h2>Want to see a piece in person?</h2>
             <p>Book a fitting at our Lagos studio, or ask us to send more photos of any item.</p>
           </div>
-          <div class="hero-actions">
-            <Link href="/contact" class="btn btn-light">Book a fitting</Link>
+          <div className="hero-actions">
+            <Link href="/contact" className="btn btn-light">Book a fitting</Link>
           </div>
         </div>
       </section>

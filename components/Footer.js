@@ -6,13 +6,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
+    <footer className="site-footer">
+      <div className="container">
+        <div className="footer-grid">
+          <div className="footer-brand">
             <img src="/assets/logo-mark.svg" alt="NF Collections mark" style={{ height: '44px' }} />
             <p>Fashion built with intention — clothing, shoes, bags and jewelry by Nana Firdausi Asabi.</p>
-            <div class="social-row">
+            <div className="social-row">
               <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
               <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
               <a href="https://wa.me/2340000000000" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
@@ -45,7 +45,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div className="footer-bottom">
           <span>© {currentYear} NF Collections. All rights reserved.</span>
           <span>Built by Nana Firdausi Asabi</span>
         </div>
